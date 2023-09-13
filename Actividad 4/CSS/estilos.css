@@ -1,0 +1,62 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(C:\Users\Matias_Maldonado\Desktop\Prueba\CSS\papel.png\papel.png);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del encabezado con forma de ola (wave) */
+header {
+    background-color: #0099cc; /* Color de fondo del encabezado */
+    padding: 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Altura de la ola */
+    background: url(..\CSS\wave.svg) repeat-x; /* Imagen de la ola */
+    transform: rotate(180deg); /* Voltear la ola */
+}
+
+/* Estilos de la sección de la receta */
+.receta {
+    background-color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.receta img {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+/* Estilos de los ingredientes y pasos */
+.ingredientes, .pasos {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+}
+
+.ingredientes ul, .pasos ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Limpieza de flotadores */
+.receta::after {
+    content: '';
+    display: table;
+    clear: both;
+}
